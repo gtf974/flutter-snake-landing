@@ -1,0 +1,33 @@
+/*
+FICHIER CSS
+
+
+ceci est un commentaire en css
+Note : On peut écrire le css dans un fichier .css ou bien directement dans les balise HTML avec l'attribut "style"
+On vise toute les balises <p>
+*/
+p{
+	color:teal;
+	border: 8px double black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*
+on va utiliser un selecteur css pour spécifier une mise en forme sur la balise visé/sélectionnné
+On vise toute les balises <i>
+*/
+i{
+	position: relative;
+    top: 18px;
+    background: rgba(255,255,255,0.6);
+    width: 100%;
+    display: inline-block;
+}
+
+/*ici le selecteur pour viser toutes les balises <strong>*/
+strong{
+	font-family: 'DotGothic16', sans-serif;
+}
