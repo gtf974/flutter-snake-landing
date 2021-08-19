@@ -27,6 +27,11 @@ i{
     display: inline-block;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 /*ici le selecteur pour viser toutes les balises <strong>*/
 strong{
 	font-family: 'DotGothic16', sans-serif;
