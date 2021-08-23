@@ -398,20 +398,19 @@
 
 
 					<div class="comment-form">
-						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data" data-netlify-recaptcha="true" data-netlify="true">
+						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data" data-netlify="true">
 							<div class="contact-info">
-								<input class="name  mr30" name="name" type="text" placeholder="Nom:*">
+								<input class="name  mr30" name="name" type="text" placeholder="Nom:*" required>
 							</div>
 							<div class="contact-info">
-								<input class="email" name="email" type="text" placeholder="Mail:*">
+								<input class="email" name="email" type="text" placeholder="Mail:*" required>
 							</div>
 							<div class="contact-info-1">
-								<input class="name" name="subject" type="text" placeholder="Objet:*">
+								<input class="name" name="subject" type="text" placeholder="Objet:*" required>
 							</div>
 							<div class="contact-info">
-								<textarea id="message" name="message" placeholder="Message:*" rows="7" cols="30"></textarea>
+								<textarea id="message" name="message" placeholder="Message:*" rows="7" cols="30" required></textarea>
 							</div>
-							<div data-netlify-recaptcha="true"></div>
 							<div class="submit-btn text-center mt20">
 								<button type="submit" value="Submit">Envoyer</button>
 							</div> 
