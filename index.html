@@ -400,16 +400,16 @@
 					<div class="comment-form">
 						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
 							<div class="contact-info">
-								<input class="name  mr30" name="name" type="text" placeholder="Nom*">
+								<input class="name  mr30" name="name" type="text" placeholder="Nom:*">
 							</div>
 							<div class="contact-info">
-								<input class="email" name="email" type="text" placeholder="Mail*">
+								<input class="email" name="email" type="text" placeholder="Mail:*">
 							</div>
 							<div class="contact-info-1">
-								<input class="name" name="name" type="text" placeholder="Objet*">
+								<input class="name" name="name" type="text" placeholder="Objet:*">
 							</div>
 							<div class="contact-info">
-								<textarea id="message" name="message" placeholder="Message*" rows="7" cols="30"></textarea>
+								<textarea id="message" name="message" placeholder="Message:*" rows="7" cols="30"></textarea>
 							</div>
 							<div class="submit-btn text-center mt20">
 								<button type="submit" value="Submit">Envoyer</button>
@@ -495,116 +495,6 @@
 			function isMobile() { 
 				return ('ontouchstart' in document.documentElement);
 			}
-
-			function init_gmap() {
-				if ( typeof google == 'undefined' ) return;
-				var options = {
-					center: [23.7806286, 90.2793692],
-					zoom: 14,
-					styles: [
-					{elementType: 'geometry', stylers: [{color: '#eeeeee'}]},
-					{elementType: 'labels.text.stroke', stylers: [{color: '#eeeeee'}]},
-					{elementType: 'labels.text.fill', stylers: [{color: '#eeeeee'}]},
-					{
-						featureType: 'administrative.locality',
-						elementType: 'labels.text.fill',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'poi',
-						elementType: 'labels.text.fill',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'poi.park',
-						elementType: 'geometry',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'poi.park',
-						elementType: 'labels.text.fill',
-						stylers: [{color: '#c6c9c3'}]
-					},
-					{
-						featureType: 'road',
-						elementType: 'geometry',
-						stylers: [{color: '#c6c9c3'}]
-					},
-					{
-						featureType: 'road',
-						elementType: 'geometry.stroke',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'road',
-						elementType: 'labels.text.fill',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'road.highway',
-						elementType: 'geometry',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'road.highway',
-						elementType: 'geometry.stroke',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'road.highway',
-						elementType: 'labels.text.fill',
-						stylers: [{color: '#cdc9c2'}]
-					},
-					{
-						featureType: 'transit',
-						elementType: 'geometry',
-						stylers: [{color: '#e4e4e3'}]
-					},
-					{
-						featureType: 'transit.station',
-						elementType: 'labels.text.fill',
-						stylers: [{color: '#e4e4e3'}]
-					},
-					{
-						featureType: 'water',
-						elementType: 'geometry',
-						stylers: [{color: '#c3c7cc'}]
-					},
-					{
-						featureType: 'water',
-						elementType: 'labels.text.fill',
-						stylers: [{color: '#c3c7cc'}]
-					},
-					{
-						featureType: 'water',
-						elementType: 'labels.text.stroke',
-						stylers: [{color: '#c3c7cc'}]
-					}
-					],
-					mapTypeControl: true,
-					mapTypeControlOptions: {
-						style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-					},
-					navigationControl: true,
-					scrollwheel: false,
-					streetViewControl: true,
-				}
-
-				if (isMobile()) {
-					options.draggable = false;
-				}
-
-				$('#googleMaps').gmap3({
-					map: {
-						options: options
-					},
-					marker: {
-						latLng: [23.7806286, 90.2793692],
-
-					}
-				});
-			}
-			init_gmap();
 		</script>
 
 	</body>
